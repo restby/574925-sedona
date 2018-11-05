@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Форма Sedona-adaptive</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="navigation">
+        <ul class="navigation__list  navigation__list--no-js">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html" aria-label="ссылка на главную страницу">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="photo.html" aria-label="ссылка на страницу с фото и видео">Фото и видео</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link"  aria-label="текущая страница">Форма отзыва</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">HTML ACADEMY</a>
+          </li>
+        </ul>
+        <button class="navigation__btn  navigation__btn--no-js" type="button" aria-label="кнопка закрыть меню">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+      </nav>
+      <a class="page-header__link" href="index.html" aria-label="ссылка на главную страницу">
+        <img class="page-header__img" src="#" alt="логотип sedona">
+      </a>
+      <button class="page-header__btn  page-header__btn--no-js" type="button" aria-label="кнопка открыть меню">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Форма отзывов</h1>
+      <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+        <b class="form__slogan">Оставьте свой отзыв</b>
+        <p class="form__desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <fieldset class="form__field  user-info">
+          <legend class="form__legend  user-info__legend">Представьтесь:</legend>
+          <ul class="user-info__list">
+            <li class="user-info__item">
+              <label class="user-info__label" for="name">ИМЯ*:</label>
+              <input class="user-info__input" id="name" type="text" placeholder="Петр" aria-label="поле для ввода имени" required>
+            </li>
+            <li class="user-info__item">
+              <label class="user-info__label" for="surname">ФАМИЛИЯ*:</label>
+              <input class="user-info__input" id="surname" type="text" placeholder="иванов" aria-label="поле для ввода фамилии" required>
+            </li>
+            <li class="user-info__item">
+              <label class="user-info__label" for="patronymic">Отчество:</label>
+              <input class="user-info__input" id="patronymic" type="text" placeholder="Александрович" aria-label="поле для ввода отчества">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__field  contacts">
+          <legend class="form__legend  contacts__legend">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <label class="contacts__label" for="phone">Контактный телефон*:</label>
+                <input class="contacts__input" type="tel" aria-label="поле для ввода контактного номера" placeholder="Введите телефон" id="phone" required>
+              </li>
+              <li class="contacts__item">
+                <label class="contacts__label" for="email">Электронная почта*:</label>
+                <input class="contacts__input" type="email" aria-label="поле для ввода электронной почты" placeholder="Введите e-mail" id="email" required>
+              </li>
+            </ul>
+          </legend>
+        </fieldset>
+        <fieldset class="form__field  impression">
+          <legend class="form__legend  impression__legend">Ваше общее впечатление:</legend>
+          <ul class="impression__list">
+            <li class="impression__item">
+              <input class="visually-hidden  impression__input  impression__input--radio" type="radio" name="impression" value="positive" id="positive" aria-label="опция выбора скорее положительное" checked>
+              <label class="impression__label" for="positive">Скорее положительное</label>
+            </li>
+            <li class="impression__item">
+              <input class="visually-hidden  impression__input  impression__input--radio" type="radio" name="impression" value="negative" id="negative" aria-label="опция выбора скорее отрицательное">
+              <label class="impression__label" for="negative">Скорее отрицательное</label>
+            </li>
+            <li class="impression__item">
+              <input class="visually-hidden  impression__input  impression__input--radio" type="radio" name="impression" value="difficult" id="difficult" aria-label="опция выбора затрудняюсь ответить">
+              <label class="impression__label" for="difficult">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__field  place">
+          <legend class="form__legend  place__legend">
+            <ul class="place__list">
+              <li class="place__item">
+                <input class="place__input  visually-hidden  place__input--checkbox" id="devil-bridge" type="checkbox" name="devil-bridge" aria-label="опция выбора мост дьявола" checked>
+                <label class="place__label" for="devil-bridge">Мост Дьявола</label>
+              </li>
+              <li class="place__item">
+                <input class="place__input  visually-hidden  place__input--checkbox" id="mountain-bell" type="checkbox" name="mountain-bell" aria-label="опция выбора гора-колокол" checked>
+                <label class="place__label" for="mountain-bell">Гора-Колокол</label>
+              </li>
+              <li class="place__item">
+                <input class="place__input  visually-hidden  place__input--checkbox" id="slide-park" type="checkbox" name="slide-park" aria-label="опция выбора слайд-парк" checked>
+                <label class="place__label" for="slide-park">Слайд-парк</label>
+              </li>
+              <li class="place__item">
+                <input class="place__input  visually-hidden  place__input--checkbox" id="red-rocks" type="checkbox" name="red-rocks" aria-label="опция выбора красные скалы" checked>
+                <label class="place__label" for="red-rocks">Красные скалы</label>
+              </li>
+            </ul>
+          </legend>
+        </fieldset>
+        <fieldset class="form__field  emotions">
+          <legend class="form__legend  emotions__legend">Опишите свои эмоции:</legend>
+            <textarea class="emotions__area" cols="1" rows="1" placeholder="Опишите подробно все свои восторги" aria-label="поле для ввода текста"></textarea>
+        </fieldset>
+        <button class="form__btn" type="submit">Отправить отзыв</button>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <b class="page-footer__heshtag">#VISITSEDONA</b>
+      <div class="page-footer  social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="ссылка на twitter">
+              <span class="visually-hidden">twitter</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="ссылка на facebook">
+              <span class="visually-hidden">facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="ссылка на youtube">
+              <span class="visually-hidden">youtube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer  developer">
+        <span class="developer__text"></span>
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
+          <img class="developer__img" width="100" height="100" src="#" alt="лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
+        </a>
+      </div>
+    </footer>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
