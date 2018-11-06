@@ -10,31 +10,33 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="navigation">
-        <ul class="navigation__list  navigation__list--no-js">
-          <li class="navigation__item">
-            <a class="navigation__link" aria-label="текущая страница">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="photo.html" aria-label="ссылка на страницу с фото и видео">Фото и видео</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html" aria-label="ссылка на страницу с формой отзыва">Форма отзыва</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">HTML ACADEMY</a>
-          </li>
-        </ul>
-        <button class="navigation__btn  navigation__btn--no-js" type="button" aria-label="кнопка закрыть меню">
-          <span class="visually-hidden">Закрыть меню</span>
+      <div class="page-header__container">
+        <nav class="navigation">
+          <ul class="navigation__list  navigation__list--no-js">
+            <li class="navigation__item">
+              <a class="navigation__link  navigation__link--main" aria-label="текущая страница">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link  navigation__link--photo" href="photo.html" aria-label="ссылка на страницу с фото и видео">Фото и видео</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link  navigation__link--form" href="form.html" aria-label="ссылка на страницу с формой отзыва">Форма отзыва</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link  navigation__link--academy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">HTML ACADEMY</a>
+            </li>
+          </ul>
+          <button class="navigation__btn  navigation__btn--no-js" type="button" aria-label="кнопка закрыть меню">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+        </nav>
+        <a class="page-header__link" aria-label="текущая страница">
+          <img class="page-header__img" src="#" alt="логотип sedona">
+        </a>
+        <button class="page-header__btn  page-header__btn--no-js" type="button" aria-label="кнопка открыть меню">
+          <span class="visually-hidden">Открыть меню</span>
         </button>
-      </nav>
-      <a class="page-header__link" aria-label="текущая страница">
-        <img class="page-header__img" src="#" alt="логотип sedona">
-      </a>
-      <button class="page-header__btn  page-header__btn--no-js" type="button" aria-label="кнопка открыть меню">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Sedona</h1>
