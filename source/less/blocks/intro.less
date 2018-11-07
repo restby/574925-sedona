@@ -1,0 +1,33 @@
+.intro {
+  background-color: @white-color;
+  border-bottom: 1px solid transparent;
+}
+
+.intro__slogan {
+  .reset-ma-pa();
+  display: block;
+  color: @black-color;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 42px;
+}
+
+@media (min-width: @tablet-width) {
+  .intro__slogan {
+    font-size: 21px;
+    margin-left: 164px;
+    margin-right: 160px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro__slogan {
+    margin-left: 380px;
+    margin-right: 376px;
+  }
+}
