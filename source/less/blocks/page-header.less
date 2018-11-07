@@ -10,7 +10,17 @@
 
 .page-header__link {
   display: block;
-  margin-left: 110px;
+  position: absolute;
+  top: 223px;
+  left: 50%;
+  margin-left: -51px;
+  width: 102px;
+  height: 83px;
+}
+
+.page-header__img {
+  width: 102px;
+  height: 83px;
 }
 
 .page-header__btn {
@@ -36,18 +46,28 @@
     flex-direction: row;
   }
 
-  .page-header__btn {
-    display: none;
+  .page-header__link {
+    top: 0;
   }
 
-  .page-header__link {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: 0;
+  .page-header__btn {
+    display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .page-header__container {
+    width: @desktop-width;
+  }
 
+  .page-header__link {
+    width: 187px;
+    height: 96px;
+    margin-left: -93px;
+  }
+
+  .page-header__img {
+    width: 187px;
+    height: 96px;
+  }
 }
