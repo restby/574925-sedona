@@ -1,0 +1,69 @@
+.features__list {
+  .listreset();
+  padding-top: 41px;
+  padding-bottom: 43px;
+  background-color: @white-color;
+}
+
+.features__item {
+  padding-left: 71px;
+  padding-right: 20px;
+  position: relative;
+  margin-bottom: 40px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.features__item--1 {
+  &::before {
+    width: 39px;
+    height: 37px;
+    top: 0;
+    left: 21px;
+    background-image: url("../../img/icon-house.svg");
+  }
+}
+
+.features__item--2 {
+  &::before {
+    width: 32px;
+    height: 38px;
+    top: 0;
+    left: 25px;
+    background-image: url("../../img/icon-gift.svg");
+  }
+}
+
+.features__item--3 {
+  &::before {
+    width: 40px;
+    height: 35px;
+    top: 0;
+    left: 18px;
+    background-image: url("../../img/icon-burger.svg");
+  }
+}
+
+.features__item-title {
+  .reset-ma-pa();
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: @black-color;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.features__item-desc {
+  .reset-ma-pa();
+  text-transform: uppercase;
+}

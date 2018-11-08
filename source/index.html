@@ -45,76 +45,88 @@
     <main class="page-main">
       <h1 class="visually-hidden">Sedona</h1>
       <div class="intro">
-        <div class="intro__wrapper">
-          <!-- <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="page-header__img" width="102" height="83" src="img/logo-sedona-mobile.svg" alt="логотип sedona">
-          </picture> -->
-          <img class="intro__text" src="#" alt="">
+        <div class="intro__container">
+          <div class="intro__wrapper">
+            <img class="intro__text" width="280" height="213" src="img/text-sedona-index.svg" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+              <img class="intro__line" width="320" height="26" src="img/bg-intro-triangle-mobile.svg" alt="">
+            </picture>
+          </div>
         </div>
-        <b class="intro__slogan">
-          СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!
-        </b>
       </div>
       <section class="reasons">
-        <h2 class="visually-hidden">5 причин, по которым Седона круче, чем гранд каньон!</h2>
-        <p class="reasons__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <ul class="reasons__list">
-          <li class="reasons__item  reasons__item--1">
-            <div class="reasons__item-text-wrapper">
-              <h3 class="reasons__item-title">НАСТОЯЩИЙ ГОРОДОК</h3>
-              <span class="reasons__item-count">— №1 —</span>
-              <p class="reasons__item-desc">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-            </div>
-            <img class="reasons__item-img" width="100" height="100" src="#" alt="НАСТОЯЩИЙ ГОРОДОК">
-            <div class="features">
-              <ul class="features__list">
-                <li class="features__item">
-                  <h4 class="features__item-title">Жилье</h4>
-                  <p class="features__item-desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                </li>
-                <li class="features__item">
-                  <h4 class="features__item-title">СУВЕНИРЫ</h4>
-                  <p class="features__item-desc">Не только китайского, но и местного производства!</p>
-                </li>
-                <li class="features__item">
-                  <h4 class="features__item-title">ЕДА</h4>
-                  <p class="features__item-desc">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="reasons__item  reasons__item--2">
-            <div class="reasons__item-text-wrapper">
-              <h3 class="reasons__item-title">Там есть Мост дьявола</h3>
-              <span class="reasons__item-count">— №2 —</span>
-              <p class="reasons__item-desc">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            </div>
-            <img class="reasons__item-img" width="100" height="100" src="#" alt="Мост дьявола">
-          </li>
-          <li class="reasons__item  reasons__item--3">
-            <div class="reasons__item-text-wrapper">
-              <h3 class="reasons__item-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-              <span class="reasons__item-count">— №3 —</span>
-              <p class="reasons__item-desc">Все интересные места находятся очень близко</p>
-            </div>
-          </li>
-          <li class="reasons__item  reasons__item--4">
-            <div class="reasons__item-text-wrapper">
-              <h3 class="reasons__item-title">КРАСИВАЯ ДОРОГА</h3>
-              <span class="reasons__item-count">— №4 —</span>
-              <p class="reasons__item-desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </div>
-          </li>
-          <li class="reasons__item  reasons__item--5">
-            <div class="reasons__item-text-wrapper">
-              <h3 class="reasons__item-title">МАЛО ТУРИСТОВ</h3>
-              <span class="reasons__item-count">— №5 —</span>
-              <p class="reasons__item-desc">Большинство едет в гранд каньон и толпится там</p>
-            </div>
-          </li>
-        </ul>
+        <div class="reasons__container">
+          <h2 class="visually-hidden">5 причин, по которым Седона круче, чем гранд каньон!</h2>
+          <b class="reasons__slogan">
+            СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!
+          </b>
+          <p class="reasons__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <ul class="reasons__list">
+            <li class="reasons__item  reasons__item--1">
+              <div class="reasons__item-text-wrapper">
+                <h3 class="reasons__item-title">НАСТОЯЩИЙ ГОРОДОК</h3>
+                <span class="reasons__item-count">— №1 —</span>
+                <p class="reasons__item-desc">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+              </div>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                <img class="reasons__item-img" width="320" height="260" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Настоящий городок">
+              </picture>
+              <div class="features">
+                <ul class="features__list">
+                  <li class="features__item  features__item--1">
+                    <h4 class="features__item-title">Жилье</h4>
+                    <p class="features__item-desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  </li>
+                  <li class="features__item  features__item--2">
+                    <h4 class="features__item-title">СУВЕНИРЫ</h4>
+                    <p class="features__item-desc">Не только китайского, но и местного производства!</p>
+                  </li>
+                  <li class="features__item  features__item--3">
+                    <h4 class="features__item-title">ЕДА</h4>
+                    <p class="features__item-desc">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="reasons__item  reasons__item--2">
+              <div class="reasons__item-text-wrapper">
+                <h3 class="reasons__item-title">Там есть Мост дьявола</h3>
+                <span class="reasons__item-count">— №2 —</span>
+                <p class="reasons__item-desc">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              </div>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                <img class="reasons__item-img" width="320" height="260" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
+              </picture>
+            </li>
+            <li class="reasons__item  reasons__item--3">
+              <div class="reasons__item-text-wrapper">
+                <h3 class="reasons__item-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+                <span class="reasons__item-count">— №3 —</span>
+                <p class="reasons__item-desc">Все интересные места находятся очень близко</p>
+              </div>
+            </li>
+            <li class="reasons__item  reasons__item--4">
+              <div class="reasons__item-text-wrapper">
+                <h3 class="reasons__item-title">КРАСИВАЯ ДОРОГА</h3>
+                <span class="reasons__item-count">— №4 —</span>
+                <p class="reasons__item-desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+            </li>
+            <li class="reasons__item  reasons__item--5">
+              <div class="reasons__item-text-wrapper">
+                <h3 class="reasons__item-title">МАЛО ТУРИСТОВ</h3>
+                <span class="reasons__item-count">— №5 —</span>
+                <p class="reasons__item-desc">Большинство едет в гранд каньон и толпится там</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
