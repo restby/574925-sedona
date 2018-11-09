@@ -1,0 +1,40 @@
+.page-footer__container {
+  width: @mobile-width;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: @white-color;
+  box-sizing: border-box;
+  padding-top: 41px;
+}
+
+.page-footer__heshtag {
+  display: block;
+  width: 135px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-bottom: 42px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__container {
+    width: @tablet-width;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .page-footer__heshtag {
+    width: auto;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__container {
+    width: @desktop-width;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
