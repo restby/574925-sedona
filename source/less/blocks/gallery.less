@@ -62,6 +62,7 @@
 
 .gallery__item-title {
   .reset-ma-pa();
+  font-size: 14px;
   line-height: 24px;
   font-weight: 700;
   color: @black-color;
@@ -70,6 +71,7 @@
 }
 
 .gallery__author {
+  font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   margin-bottom: 10px;
@@ -142,6 +144,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+    background-color: @body-color;
   }
 
   .gallery__img {
@@ -153,6 +156,15 @@
   .gallery__item:first-child .gallery__img {
     width: 648px;
     height: 400px;
+  }
+
+  .gallery__item-col--left {
+    padding-top: 20px;
+  }
+
+  .gallery__item-col--right {
+    padding-top: 30px;
+    width: 85px;
   }
 }
 
