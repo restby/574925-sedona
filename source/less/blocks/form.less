@@ -1,0 +1,134 @@
+.form__container {
+  width: @mobile-width;
+  background-color: @white-color;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 75px;
+}
+
+.form__slogan {
+  display: block;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700px;
+  text-transform: uppercase;
+  color: @black-color;
+  margin-left: 44px;
+  margin-bottom: 35px;
+}
+
+.form__desc {
+  .reset-ma-pa();
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid @border-color;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.form__field {
+  .reset-ma-pa();
+  border: 0;
+  border-bottom: 1px solid @border-color;
+  margin-bottom: 20px;
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+.form__btn {
+  width: 280px;
+  height: 58px;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+  box-sizing: border-box;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: @white-color;
+  border: 0;
+  background-color: @bg-blue-color;
+}
+
+.form__required {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .form__container {
+    width: @tablet-width;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .form__slogan {
+    font-size: 30px;
+    margin-left: 160px;
+  }
+
+  .form__desc {
+    border-bottom: none;
+    margin-left: 105px;
+    margin-right: 105px;
+    margin-bottom: 85px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .form__field {
+    border-bottom: none;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .form__btn {
+    width: 324px;
+    margin: 0;
+  }
+
+  .form__required {
+    display: block;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__container {
+    width: @desktop-width;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .form__slogan {
+    font-size: 30px;
+    margin-left: 315px;
+  }
+
+  .form__desc {
+    margin-left: 260px;
+    margin-right: 260px;
+    margin-bottom: 85px;
+  }
+
+  .form__btn {
+    width: 324px;
+    margin: 0;
+  }
+
+  .form__required {
+    display: block;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+}
