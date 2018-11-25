@@ -35,8 +35,36 @@
 
 @media (min-width: @tablet-width) {
   .emotions {
-    width: 324px;
+    width: 100%;
     order: 5;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 125px;
+      height: 1px;
+      top: 0;
+      margin-top: -35px;
+      left: 0;
+      background-color: @border-color;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      top: 0;
+      margin-top: -35px;
+      right: 0;
+      background-color: @border-color;
+    }
+  }
+
+  .emotions__legend {
+    margin-left: 198px;
+    margin-bottom: 20px;
   }
 }
 
