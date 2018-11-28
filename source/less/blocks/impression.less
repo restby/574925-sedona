@@ -1,3 +1,6 @@
+.impression {
+  margin-bottom: 18px;
+}
 .impression__legend {
   margin-bottom: 25px;
   margin-left: 22px;
@@ -7,7 +10,7 @@
   .listreset();
   display: flex;
   flex-direction: column;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .impression__item {
@@ -21,7 +24,7 @@
 }
 
 .impression__label {
-  min-height: 56px;
+  min-height: 45px;
   padding-left: 78px;
   padding-top: 10px;
   font-size: 18px;
@@ -42,6 +45,10 @@
   }
 }
 
+.impression__item--2 .impression__label {
+  padding-top: 13px;
+}
+
 .impression__input--radio:checked + .impression__label::after {
     position: absolute;
     content: "";
@@ -49,7 +56,7 @@
     height: 22px;
     border-radius: 50%;
     left: 17px;
-    top: 17px;
+    top: 15px;
     background-color: @text-color33;
   }
 
