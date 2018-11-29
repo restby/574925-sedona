@@ -26,10 +26,61 @@
   text-transform: uppercase;
   margin-bottom: 6px;
   margin-left: 21px;
+  position: relative;
 }
 
 .contacts__item--2 .contacts__label {
   padding-top: 12px;
+}
+
+.contacts__label--phone {
+  &::before {
+    position: absolute;
+    content: "";
+    top: 32px;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background-color: @bg-grey-alternative-color;
+    z-index: 2;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 52px;
+    right: -21px;
+    width: 58px;
+    height: 58px;
+    background-image: url("../../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    z-index: 3;
+  }
+}
+
+.contacts__label--email {
+  &::before {
+    position: absolute;
+    content: "";
+    top: 44px;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background-color: @bg-grey-alternative-color;
+    z-index: 2;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 67px;
+    right: -21px;
+    width: 58px;
+    height: 58px;
+    background-image: url("../../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    z-index: 3;
+  }
 }
 
 .contacts__input {
@@ -62,37 +113,33 @@
   .contacts {
     width: 100%;
     order: 3;
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 125px;
-      height: 1px;
-      top: 0;
-      margin-top: -35px;
-      left: 0;
-      background-color: @border-color;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 123px;
-      height: 1px;
-      top: 0;
-      margin-top: -35px;
-      right: 0;
-      background-color: @border-color;
-    }
+    margin-top: 66px;
+    border-top: 1px solid @border-color;
+    padding-top: 25px;
+    margin-bottom: 0;
   }
 
   .contacts__legend {
-    margin-top: 75px;
-    margin-left: 183px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contacts__item--2 .contacts__label {
+    padding-top: 24px;
+  }
+
+  .contacts__label--email {
+    &::before {
+      top: 56px;
+    }
+
+    &::after {
+      top: 79px;
+    }
   }
 }
 
-@media (min-width: @desktop-width) {
+// @media (min-width: @desktop-width) {
 
-}
+// }
