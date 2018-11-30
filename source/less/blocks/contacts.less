@@ -140,6 +140,24 @@
   }
 }
 
-// @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .contacts__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 
-// }
+  .contacts__item {
+    width: 480px;
+    box-sizing: border-box;
+    flex-direction: row;
+  }
+
+  .contacts__item--1 .contacts__input {
+    width: 315px;
+  }
+
+  .contacts__item--2 .contacts__input {
+    width: 316px;
+  }
+}

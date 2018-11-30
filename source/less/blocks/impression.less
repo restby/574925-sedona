@@ -96,6 +96,18 @@
   }
 }
 
-// @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .impression__legend {
+    margin-left: 79px;
+  }
 
-// }
+  .impression__label {
+    padding-top: 9px;
+    padding-left: 79px;
+  }
+
+  .impression__input--radio:checked + .impression__label::after {
+    left: 21px;
+    top: 13px;
+  }
+}
