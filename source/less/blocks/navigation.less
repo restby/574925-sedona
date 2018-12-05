@@ -42,6 +42,15 @@
   padding-bottom: 8px;
   padding-left: 20px;
   padding-right: 20px;
+
+  &:hover {
+    background-color: @bg-blue-altarnative-color;
+  }
+
+  &:active {
+    background-color: @blue-altarnative-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .navigation__link--main {
@@ -106,12 +115,31 @@
   .navigation__link {
     width: auto;
     background-color: transparent;
-    color: @black-color;
+    color: @brown-color;
     font-size: 14px;
     line-height: 26px;
     padding: 0;
     margin-top: 15px;
     margin-bottom: 15px;
+
+    &:hover {
+      color: @brown-altarnative-color;
+      background-color: transparent;
+    }
+
+    &:active {
+      background-color: transparent;
+      opacity: 0.3;
+      color: @brown-color;
+    }
+  }
+
+  .navigation__link[href] {
+    color: @black-color;
+  }
+
+  .navigation__link[href]:hover {
+    color: @bg-blue-color;
   }
 
   .navigation__link--main {

@@ -64,6 +64,19 @@
   color: @white-color;
   border: 0;
   background-color: @bg-blue-color;
+
+  &:hover {
+    background-color: @bg-blue-altarnative-color;
+  }
+
+  &:active {
+    background-color: @blue-altarnative-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @border-color;
+  }
 }
 
 .form__required {

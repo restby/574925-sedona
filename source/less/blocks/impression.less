@@ -44,6 +44,14 @@
     left: 0;
     background-color: @body-color;
   }
+
+  &:hover::before {
+    background-color: @border-color;
+  }
+
+  &:active::before {
+    background-color: @body-color-alternative;
+  }
 }
 
 .impression__item--2 .impression__label {
@@ -59,6 +67,10 @@
   left: 17px;
   top: 15px;
   background-color: @text-color33;
+}
+
+.impression__input--radio:checked + .impression__label:active::after {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {

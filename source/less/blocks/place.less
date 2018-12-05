@@ -43,6 +43,14 @@
     left: 0;
     background-color: @body-color;
   }
+
+  &:hover::before {
+    background-color: @border-color;
+  }
+
+  &:active::before {
+    background-color: @body-color-alternative;
+  }
 }
 
 .place__input--checkbox:checked + .place__label::after {
@@ -54,6 +62,10 @@
   top: 21px;
   background-image: url("../../img/icon-tick.svg");
   background-repeat: no-repeat;
+}
+
+.place__input--checkbox:checked + .place__label:active::after {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {

@@ -19,10 +19,22 @@
   width: 46px;
   height: 48px;
   background-color: @bg-blue-color;
+
+  &:hover {
+    background-color: @bg-blue-altarnative-color;
+  }
+
+  &:active {
+    background-color: @blue-altarnative-color;
+  }
 }
 
 .social__icon {
   fill: @white-color;
+}
+
+.social__link:active .social__icon {
+  opacity: 0.3;
 }
 
 .social__icon--twitter {
