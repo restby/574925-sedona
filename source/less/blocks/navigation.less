@@ -4,11 +4,15 @@
 }
 
 .navigation__list {
-  .listreset();
   display: none;
+  .listreset();
 }
 
 .navigation__list--no-js {
+  display: block;
+}
+
+.navigation__list--show {
   display: block;
 }
 
@@ -80,11 +84,12 @@
   background-image: url("../../img/icon-cross.svg");
   background-repeat: no-repeat;
   cursor: pointer;
+  z-index: 2;
 }
 
-// .navigation__btn--no-js {
-//   display: none;
-// }
+.navigation__btn--no-js {
+  display: none;
+}
 
 @media (min-width: @tablet-width) {
   .navigation {
