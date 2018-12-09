@@ -20,7 +20,7 @@ var gulp = require("gulp"),
 
 gulp.task("clean", function() {
   return del("build/")
-})
+});
 gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
@@ -58,7 +58,7 @@ gulp.task("jsmin", function() {
     path.basename += ".min";
   }))
   .pipe(gulp.dest("build/js"))
-})
+});
 gulp.task("html", function() {
   return gulp.src("source/*.html")
   .pipe(posthtml([
@@ -78,9 +78,9 @@ gulp.task("images", function() {
   .pipe(gulp.dest("source/img/"));
 });
 gulp.task("webp", function() {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src("build/img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("source/img/"));
+  .pipe(gulp.dest("build/img/"));
 });
 gulp.task("server", function () {
   server.init({
@@ -107,7 +107,8 @@ gulp.task("build", gulp.series(
   "css",
   "sprite",
   "html",
-  "jsmin"
+  "jsmin",
+  "webp"
   ));
 
 gulp.task("start", gulp.series("build", "server"));
