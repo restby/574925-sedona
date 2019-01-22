@@ -77,9 +77,9 @@ gulp.task("images", function() {
   .pipe(gulp.dest("source/img/"));
 });
 gulp.task("webp", function() {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src("build/img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("source/img/"));
+  .pipe(gulp.dest("build/img/"));
 });
 gulp.task("server", function () {
   server.init({
@@ -104,6 +104,7 @@ gulp.task("build", gulp.series(
   "css",
   "sprite",
   "html",
-  "jsmin"
+  "jsmin",
+  "webp"
   ));
 gulp.task("start", gulp.series("build", "server"));
